@@ -9,6 +9,16 @@ def cli_runner():
     return CliRunner()
 
 
+# simple test
+def test_wikibot():
+    runner = CliRunner()
+    # Specify the subcommand 'scrape' followed by its options
+    # cli expect scrape since scrape is the fucntion name and it is the command
+    result = runner.invoke(cli, ["scrape", "--name", "Microsoft", "--length", 1])
+    assert result.exit_code == 0
+    assert "Microsoft" in result.output
+
+
 # pylint: disable=redefined-outer-name
 def test_scrape_with_defaults(cli_runner, mocker):
     """Test the scrape command with default arguments."""

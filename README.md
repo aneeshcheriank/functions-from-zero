@@ -15,3 +15,7 @@ create a function and push to cloud
 - add last line as `source ~/.venv/bin/activate`
 - `which python`
 - `which pip`
+- run a python script file
+    - hedder of the file: `# !user/bin/env python` 
+    - set the file executable: `chmod +x`
+    - run the file `./<filename>.py`

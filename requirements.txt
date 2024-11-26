@@ -4,3 +4,4 @@ black
 wikipedia
 click
 pytest-mock
+fire
