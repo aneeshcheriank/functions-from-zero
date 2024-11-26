@@ -30,3 +30,8 @@ curl -X 'POST' \
   "name": "Facebook"
 }'
 ```
+
+## docker commands
+- `docker build . -t my_docker`
+- to list the docker id: `docker image ls`
+- `docker run -p 127.0.0.1:800:8080 my_docker`
