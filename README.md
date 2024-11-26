@@ -19,3 +19,14 @@ create a function and push to cloud
     - hedder of the file: `# !user/bin/env python` 
     - set the file executable: `chmod +x`
     - run the file `./<filename>.py`
+
+## call microservice
+```
+curl -X 'POST' \
+  'https://refactored-memory-6v5qv46xgxj2x6vw-8000.app.github.dev/wiki' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "name": "Facebook"
+}'
+```

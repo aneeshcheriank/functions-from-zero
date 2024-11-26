@@ -2,7 +2,7 @@ import fire
 import wikipedia
 
 
-def scrape(name, length):
+def scrape(name, length=1):
     result = wikipedia.summary(name, sentences=length)
     print(result)
     return result

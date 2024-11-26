@@ -5,3 +5,6 @@ wikipedia
 click
 pytest-mock
 fire
+uvicorn[standard]
+fastapi
+pydantic
